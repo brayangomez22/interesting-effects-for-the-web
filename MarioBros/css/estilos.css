@@ -1,0 +1,222 @@
+body{
+  background-color: #0F79C7;
+  user-select: none;
+}
+
+body.dark {
+  background: #111111;
+}
+
+@font-face {
+  font-family: "emulogic";
+  src: url("emulogic.ttf");
+}
+
+.bloque{
+  width: 50px;
+  height: 50px;
+  background-color: brown;
+  border: solid 10px;
+  border-right-color: black;
+  border-bottom-color: black;
+  border-top-color: orange;
+  border-left-color: orange;
+  position: absolute;
+}
+
+.contenedor-piramide{
+  position: relative;
+  width: 250px;
+  height: 250px;
+  left: 400px;
+  top: 162px;
+}
+
+#b1{
+  right: 0px;
+  top: 200px;
+}
+#b2{
+  top: 200px;
+  right: 50px;
+}
+#b3{
+  top: 200px;
+  right: 100px;
+}
+#b4{
+  top: 200px;
+  right: 150px;
+}
+#b5{
+  top: 200px;
+  right: 200px;
+}
+#b6{
+  top: 150px;
+  right: 0px;
+}
+#b7{
+  top: 150px;
+  right: 50px;
+}
+#b8{
+  top: 150px;
+  right: 100px;
+}
+#b9{
+  top: 150px;
+  right: 150px;
+}
+#b10{
+  top: 100px;
+  right: 0px;
+}
+#b11{
+  top: 100px;
+  right: 50px;
+}
+#b12{
+  top: 100px;
+  right: 100px;
+}
+#b13{
+  top: 50px;
+  right: 0px;
+}
+#b14{
+  top: 50px;
+  right: 50px;
+}
+#b15{
+  top: 0px;
+  right: 0px;
+}
+/*-------------------tubo------------------*/
+.tubo{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 51%;
+}
+/*------------------------moneda---------------------------*/
+.moneda{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-left: -43px;
+}
+/*--------------------------nube-------------------------------*/
+.nube{
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  left: 30px;
+}
+/*------------------------------imagenes---------------------------*/
+.suelo{
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  top: 497px;
+}
+
+.mario{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 68px;
+  bottom: 40%;
+}
+
+.mario2{
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  margin-left: 217%;
+  top: 117%;
+}
+
+.bandera{
+  position: absolute;
+  height: 400px;
+  white: 30px;
+  left: 750px;
+  bottom: 110px;
+}
+
+.castillo{
+  position: absolute;
+  width: 250px;
+  height: 400px;
+  left: 200%;
+  top: 5%;
+}
+
+.tortuga{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 200px;
+  top: 49%;
+}
+
+.h1{
+  font-family: emulogic;
+  position: relative;
+  color: white;
+  font-size: 25px;
+  text-shadow: 0px 4px 3px rgb(0,0,0,.5);
+}
+
+/*==============================================
+ DIA-NOCHE
+/*=============================================*/
+
+.switch {
+  outline: none;
+  background: #343D58;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #F1F1F1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.switch.active {
+  background: orange;
+  color: #000;
+}
+
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff;
+}
